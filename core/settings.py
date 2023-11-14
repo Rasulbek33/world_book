@@ -86,7 +86,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-LANGUAGE_CODE = 'uz-uz'
+LANGUAGE_CODE = 'en-en'
 
 TIME_ZONE = 'Asia/Tashkent'
 
@@ -107,3 +107,9 @@ MEDIA_URL ='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR / 'media/') # upload_to='image/ndksandkjsan' ///// media/image/image.png/17.06.2000
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+LOGIN_REDIRECT_URL = '/'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
